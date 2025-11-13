@@ -27,8 +27,6 @@ public class Journal
 
     public void LoadFile()
     {
-        // Console.WriteLine("What is the file name?");
-        // _fileName = Console.ReadLine();
         _fileName = owner._fileName;
         _lines.Clear();
         string[] lines = System.IO.File.ReadAllLines(_fileName);
