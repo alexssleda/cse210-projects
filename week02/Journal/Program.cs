@@ -9,16 +9,19 @@ class Program
         String description = "";
 
         List<String> questions = new List<String>();
-        questions.Add("Who was the most interesting person I interacted with today?");
-        questions.Add("What was the best part of my day?");
-        questions.Add("How did I see the hand of the Lord in my life today?");
-        questions.Add("What was the strongest emotion I felt today?");
-        questions.Add("If I had one thing I could do over today, what would it be?");
         questions.Add("What goals am I working?");
         questions.Add("Who did I help today and how?");
         questions.Add("Who did help me today and how did I show gratitude?");
+        questions.Add("What happened today that made me smile (even something small)?");
+        questions.Add("What did I learn about myself or about others today?");
+        questions.Add("What am I grateful for right now?");
+        questions.Add("What was the most meaningful or beautiful moment of my day — and why?");
         int number = 0;
 
+        Owner owner = new Owner();
+
+        owner.RegisterOwner();
+        
         Journal newJournal = new Journal();
         while (answer != 5)
         {
