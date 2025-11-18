@@ -10,7 +10,7 @@ public class Journal
 
         Console.WriteLine("What is the file name?");
         _fileName = Console.ReadLine();
-
+        Console.WriteLine(_fileName);
         if (!_fileName.EndsWith(".txt"))
         {
             _fileName += ".txt";
