@@ -1,4 +1,4 @@
-// SimpleGoal.cs
+
 using System;
 
 public class SimpleGoal : Goal
@@ -31,7 +31,6 @@ public class SimpleGoal : Goal
 
     public override string GetStringRepresentation()
     {
-        // SimpleGoal:name|description|points|isComplete
         return $"SimpleGoal:{_name}|{_description}|{_points}|{_isComplete}";
     }
 }
